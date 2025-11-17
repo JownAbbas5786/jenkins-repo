@@ -13,7 +13,7 @@ export default function App(){
   return (
     <div style={{fontFamily:'sans-serif',padding:20}}>
       <h1>My App</h1>
-      <p>API says: <strong>{msg}</strong></p>
+      <p>API say: <strong>{msg}</strong></p>
     </div>
   )
 }
