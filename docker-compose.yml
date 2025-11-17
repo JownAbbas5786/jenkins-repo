@@ -1,14 +1,18 @@
 version: '3.8'
+
 services:
   backend:
-    build: ./backend
+    image: jown196/cicd-piplines-backend:latest
     ports:
       - "5000:5000"
     environment:
       - NODE_ENV=production
+
   frontend:
-    build: ./frontend
+    image: jown196/cicd-piplines-frontend:latest
     ports:
       - "80:80"
     depends_on:
       - backend
+
+
